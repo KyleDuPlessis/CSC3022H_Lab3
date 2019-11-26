@@ -1,0 +1,23 @@
+			~~~~~~~~ Input training examples ~~~~~~~~
+
+Example   Sky     AirTemp    Humidity        Wind       Water    Forecast  EnjoySport
+1       Sunny        Warm      Normal      Strong        Warm        Same         Yes
+2       Sunny        Warm        High      Strong        Warm        Same         Yes
+3       Rainy        Cold        High      Strong        Warm      Change          No
+4       Sunny        Warm        High      Strong        Cool      Change         Yes
+5       Sunny        Warm      Normal        Weak        Cool      Change         Yes
+
+			~~~~~~~~ The FIND-S algorithm ~~~~~~~~
+
+h0 = <0, 0, 0, 0, 0, 0>
+h1 = <Sunny, Warm, Normal, Strong, Warm, Same>
+h2 = <Sunny, Warm, ?, Strong, Warm, Same>
+h3 = <Sunny, Warm, ?, Strong, Warm, Same>
+h4 = <Sunny, Warm, ?, Strong, ?, ?>
+h5 = <Sunny, Warm, ?, ?, ?, ?>
+
+			~~~~~~~~ Learned the target concept ~~~~~~~~
+
+<Sunny, Warm, ?, ?, ?, ?>
+
+Therefore, only one additional training example (i.e. example 5) is required to exactly learn the above target concept.

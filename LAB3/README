@@ -1,0 +1,20 @@
+Makefile rules:
+
+Makefile in project folder (DPLKYL002_LAB3):
+
+[* - use these rules here]
+
+make - compile this project folder only
+*make all - compile the entire project
+*make run
+*make clean - clean the entire project
+
+Makefiles in /libs/findslib folders:
+make - compile this folder only
+make clean - clean this folder only
+
+Explanation of what each file does and how it fits into the program as a whole:
+
+FindS.cpp & FindS.h - These source and header files implements the FIND-S algorithm.
+
+Driver.cpp - This driver source file contains the main function (entry point to the program).
